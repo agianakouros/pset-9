@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 body {
-  background-color: #000000;
   color: rgba(255, 255, 255, 0.7);
   font-family: 'Lato', sans-serif;
   margin: 20px;
@@ -36,9 +35,9 @@ body {
 
 .spacer {
   display: inline-block;
-  width: 80px;
-  margin-left: 15px;
-  margin-right: 15px;
+  width: 100px;
+  margin-left: 0px;
+  margin-right: 60px;
   vertical-align: middle;
   cursor: pointer;
   position: relative;
@@ -151,27 +150,9 @@ a:hover {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 body {
   background-color: #212427;
   text-align: center;
-  font-family: "Roboto", monospace
 }
 
 h1 {
