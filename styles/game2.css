@@ -150,3 +150,7 @@ a {
 a:hover {
   color: coral;
 }
+
+.current {
+  color: coral;
+}

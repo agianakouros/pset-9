@@ -387,3 +387,7 @@ h2 {
   height: 140px;
   font-size: 25px;
 }
+
+.current {
+  color: coral;
+}
