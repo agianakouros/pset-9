@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+body {
+  background-color: #000000;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Lato', sans-serif;
+  margin: 20px;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.menu {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  cursor: pointer;
+  pointer-events: none;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+}
+.menu:hover {
+  pointer-events: all;
+}
+.label {
+  display: inline-block;
+  cursor: pointer;
+  pointer-events: all;
+}
+.spacer {
+  display: inline-block;
+  width: 80px;
+  margin-left: 15px;
+  margin-right: 15px;
+  vertical-align: middle;
+  cursor: pointer;
+  position: relative;
+}
+.spacer:before {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #ffffff;
+  height: 1px;
+  width: 0%;
+  transition: width 0.25s ease;
+  transition-delay: 0.7s;
+}
+.item {
+  position: relative;
+  display: inline-block;
+  margin-right: 30px;
+  top: 10px;
+  opacity: 0;
+  transition: opacity 0.5s ease, top 0.5s ease;
+  transition-delay: 0;
+}
+span {
+  transition: color 0.5s ease;
+}
+.item:hover span {
+  color: #ff0000;
+}
+.menu:hover .spacer:before {
+  width: 100%;
+  transition-delay: 0s;
+}
+.menu:hover .item {
+  opacity: 1;
+  top: 0px;
+}
+.item:nth-child(1) {
+  transition-delay: 0.45s;
+}
+.item:nth-child(2) {
+  transition-delay: 0.4s;
+}
+.item:nth-child(3) {
+  transition-delay: 0.35s;
+}
+.item:nth-child(4) {
+  transition-delay: 0.3s;
+}
+.item:nth-child(5) {
+  transition-delay: 0.25s;
+}
+.item:nth-child(6) {
+  transition-delay: 0.2s;
+}
+.item:nth-child(7) {
+  transition-delay: 0.15s;
+}
+.item:nth-child(8) {
+  transition-delay: 0.1s;
+}
+.item:nth-child(9) {
+  transition-delay: 0.05s;
+}
+.item:nth-child(10) {
+  transition-delay: 0s;
+}
+.menu:hover .item:nth-child(1) {
+  transition-delay: 0.25s;
+}
+.menu:hover .item:nth-child(2) {
+  transition-delay: 0.3s;
+}
+.menu:hover .item:nth-child(3) {
+  transition-delay: 0.35s;
+}
+.menu:hover .item:nth-child(4) {
+  transition-delay: 0.4s;
+}
+.menu:hover .item:nth-child(5) {
+  transition-delay: 0.45s;
+}
+.menu:hover .item:nth-child(6) {
+  transition-delay: 0.5s;
+}
+.menu:hover .item:nth-child(7) {
+  transition-delay: 0.55s;
+}
+.menu:hover .item:nth-child(8) {
+  transition-delay: 0.6s;
+}
+.menu:hover .item:nth-child(9) {
+  transition-delay: 0.65s;
+}
+.menu:hover .item:nth-child(10) {
+  transition-delay: 0.7s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  background-color: #212427;
+  text-align: center;
+  font-family: "Roboto", monospace
+}
+
+h1 {
+  margin: 0 auto;
+  font-family: "Major Mono Display", monospace;
+  font-size: 52px;
+  margin: 2%;
+  color: white;
+  text-shadow: -2px 2px 3px coral;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: lighter;
+  margin: 2%;
+  color: white;
+}
+
+.container {
+  display: flex;           /* set our display property to use flex-box */
+  justify-content: center; /* center container horizontally */
+  align-items: center;     /* center content vertically */
+}
+
+.column {
+  height: 100%;
+  width: 100%;
+  flex-direction: column; /* align children in columns instead of rows */
+}
+
+.wrap {
+  flex-wrap: wrap; /* tells container to drop down once it reaches max-width */
+  height: 456px;
+  width: 456px;
+}
+
+.square {
+  height: 150px;
+  user-select: none;
+  width: 150px;
+}
+
+.square:hover {
+  background-color: coral;
+  cursor: pointer;
+}
+
+  ::selection {
+    background: coral;
+  }
+
+  ::-moz-selection {
+    background: coral;
+  }
+
+  .square {
+    border: 2px solid white;
+    font-size: 96px;
+    height: 150px;
+    line-height: 150px;
+    user-select: none;
+    width: 140px;
+    color: white;
+  }
+
+  .select {
+    float: right;
+    background-color: coral;
+    width: 300px;
+    height: 120px;
+    border: 15px solid coral;
+    border-radius: 15px;
+    position: relative;
+    z-index: -1;
+    margin-right: .5%;
+  }
+
+  .order {
+    float: left;
+  }
+
+ #reset-button:hover {
+   top: 3px;
+   left: -3px;
+   box-shadow: -3px 3px 0 #404040;
+ }
+
+   #reset-button:after {
+     top: 1px;
+     left: -2px;
+     width: 4px;
+     height: 4px;
+   }
+
+  #reset-button:before {
+     bottom: -2px;
+     right: 1px;
+     width: 4px;
+     height: 4px;
+   }
+ }
+
+ #reset-button::after {
+   transition: all .5s linear 0s;
+   content: '';
+   position: absolute;
+   top: 2px;
+   left: -4px;
+   width: 8px;
+   height: 8px;
+   background-color: #404040;
+   transform: rotate(45deg);
+   z-index: -1;
+ }
+
+ #reset-button::before {
+   transition: all .5s linear 0s;
+   content: '';
+   position: absolute;
+   bottom: -4px;
+   right: 2px;
+   width: 8px;
+   height: 8px;
+   background-color: #404040;
+   transform: rotate(45deg);
+   z-index: -1;
+ }
+
+ #reset-button {
+   width: 430px;
+   text-align: center;
+   background-color: coral;
+   border: 2px solid;
+   border-color: coral;
+   border-radius: 8px;
+   text-transform: uppercase;
+   color: #404040;
+   letter-spacing: 1px;
+
+   box-shadow: -6px 6px 0 #404040;
+   text-decoration: none;
+   position: relative;
+   font-size: 26px;
+   line-height: 55px;
+   margin: 1%;
+ }
+
+#reset-button:hover {
+  cursor: pointer;
+}
+
+#xwins {
+  font-size: 43px;
+  font-weight: lighter;
+  margin: 1%;
+  padding-bottom: 5px;
+  color: #404040;
+}
+
+#owins {
+  font-size: 43px;
+  font-weight: lighter;
+  margin: 1%;
+  color: #404040;
+}
+
+#orderbutton:hover {
+  top: 3px;
+  left: -3px;
+  box-shadow: -3px 3px 0 #404040;
+  cursor: pointer;
+}
+
+  #orderbutton:after {
+    top: 1px;
+    left: -2px;
+    width: 4px;
+    height: 4px;
+  }
+
+ #orderbutton:before {
+    bottom: -2px;
+    right: 1px;
+    width: 4px;
+    height: 4px;
+  }
+}
+
+#orderbutton::after {
+  transition: all .5s linear 0s;
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: -4px;
+  width: 8px;
+  height: 8px;
+  background-color: #404040;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+#orderbutton::before {
+  transition: all .5s linear 0s;
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  right: 2px;
+  width: 8px;
+  height: 8px;
+  background-color: #404040;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+#orderbutton {
+  width: 300px;
+  text-align: center;
+  background-color: coral;
+  border: 2px solid;
+  border-color: coral;
+  border-radius: 8px;
+  text-transform: uppercase;
+  color: #404040;
+  letter-spacing: 1px;
+
+  box-shadow: -6px 6px 0 #404040;
+  text-decoration: none;
+  position: relative;
+  line-height: 140px;
+  margin: 5%;
+  height: 140px;
+  font-size: 25px;
+}
