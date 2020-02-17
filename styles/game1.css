@@ -391,3 +391,7 @@ h2 {
 .current {
   color: coral;
 }
+
+h1{
+  font-family: "Major Mono Display", monospace;
+}
