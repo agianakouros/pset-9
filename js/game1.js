@@ -78,11 +78,11 @@ board.forEach(function(mark, index) {
 let change1 = document.getElementById("owins").innerHTML;
 let change2 = document.getElementById("xwins").innerHTML;
 
-let new1 = change2.splice(8, 1, countingxwins);
-let new2 = change1.splice(8, 1, countingowins);
+change1 = `X Wins: ${countingxwins}`;
+change2 = `O Wins: ${countingowins}`;
 
-document.getElementById("xwins").innerHTML = new1;
-document.getElementById("owins").innerHTML = new2;
+document.getElementById("xwins").innerHTML = change1;
+document.getElementById("owins").innerHTML = change2;
 
 message.textContent =
   win === "T" ? "It's a tie!" : win ? `${win} wins!` : `Turn: ${turn}`;
