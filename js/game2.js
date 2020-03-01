@@ -2,7 +2,7 @@ var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 var ballRadius = 12.5;
 var x = canvas.width/2;
-var y = canvas.height-30;
+var y = canvas.height-50;
 var dx = 2;
 var dy = -2;
 var paddleHeight = 15;
@@ -15,7 +15,7 @@ var brickColumnCount = 6;
 var brickWidth = 100;
 var brickHeight = 25;
 var brickPadding = 10;
-var brickOffsetTop = 30;
+var brickOffsetTop = 50;
 var brickOffsetLeft = 30;
 var score = 0;
 var lives = 3;
@@ -107,14 +107,14 @@ function drawBricks() {
   }
 }
 function drawScore() {
-  ctx.font = "20px Lato";
+  ctx.font = "25px Lato";
   ctx.fillStyle = "coral";
-  ctx.fillText("Score: "+score, 8, 20);
+  ctx.fillText("Score: "+score, 8, 23);
 }
 function drawLives() {
-  ctx.font = "20px Lato";
+  ctx.font = "25px Lato";
   ctx.fillStyle = "coral";
-  ctx.fillText("Lives: "+lives, canvas.width-75, 20);
+  ctx.fillText("Lives: "+lives, canvas.width-90, 23);
 }
 
 function draw() {
