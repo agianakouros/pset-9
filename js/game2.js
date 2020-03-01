@@ -14,11 +14,11 @@ var brickRowCount = 9;
 var brickColumnCount = 6;
 var brickWidth = 100;
 var brickHeight = 25;
-var brickPadding = 10;
+var brickPadding = 11;
 var brickOffsetTop = 50;
 var brickOffsetLeft = 30;
 var score = 0;
-var lives = 3;
+var lives = 5;
 
 var bricks = [];
 for(var c=0; c<brickColumnCount; c++) {
@@ -28,9 +28,14 @@ for(var c=0; c<brickColumnCount; c++) {
   }
 }
 
+document.getElementById("function").onclick = gameStart;
+
+function gameStart() {
+
 document.addEventListener("keydown", keyDownHandler, false);
 document.addEventListener("keyup", keyUpHandler, false);
 document.addEventListener("mousemove", mouseMoveHandler, false);
+
 
 function keyDownHandler(e) {
     if(e.key == "Right" || e.key == "ArrowRight") {
@@ -108,12 +113,12 @@ function drawBricks() {
 }
 function drawScore() {
   ctx.font = "25px Lato";
-  ctx.fillStyle = "coral";
+  ctx.fillStyle = "#212427";
   ctx.fillText("Score: "+score, 8, 23);
 }
 function drawLives() {
   ctx.font = "25px Lato";
-  ctx.fillStyle = "coral";
+  ctx.fillStyle = "#212427";
   ctx.fillText("Lives: "+lives, canvas.width-90, 23);
 }
 
@@ -126,23 +131,19 @@ function draw() {
   drawLives();
   collisionDetection();
 
-  if(x + dx > canvas.width-ballRadius || x + dx < ballRadius) {
+    if(x + dx > canvas.width-ballRadius || x + dx < ballRadius) {
     dx = -dx;
-  }
-  if(y + dy < ballRadius) {
+  } if(y + dy < ballRadius) {
     dy = -dy;
-  }
-  else if(y + dy > canvas.height-ballRadius) {
+  } else if(y + dy > canvas.height-ballRadius) {
     if(x > paddleX && x < paddleX + paddleWidth) {
       dy = -dy;
-    }
-    else {
+    } else {
       lives--;
       if(!lives) {
         alert("GAME OVER");
         document.location.reload();
-      }
-      else {
+      } else {
         x = canvas.width/2;
         y = canvas.height-30;
         dx = 3;
@@ -152,10 +153,9 @@ function draw() {
     }
   }
 
-  if(rightPressed && paddleX < canvas.width-paddleWidth) {
+    if(rightPressed && paddleX < canvas.width-paddleWidth) {
     paddleX += 7;
-  }
-  else if(leftPressed && paddleX > 0) {
+  } else if(leftPressed && paddleX > 0) {
     paddleX -= 7;
   }
 
@@ -165,3 +165,5 @@ function draw() {
 }
 
 draw();
+
+}

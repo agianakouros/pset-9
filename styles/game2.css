@@ -178,3 +178,53 @@ h1 {
   padding-top: 50px;
   text-align: center;
 }
+
+.btn3d {
+    position: relative;
+    top: -6px;
+    border: 0;
+    transition: all 40ms linear;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 425px;
+    height: 60px;
+    font-size: 35px;
+    border-radius: 15px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+div .btn3d {
+  align-self: center;
+}
+
+.btn3d:hover{
+  cursor: pointer;
+}
+
+.btn3d:active:focus,
+.btn3d:focus:hover,
+.btn3d:focus {
+    -moz-outline-style: none;
+    outline: medium none;
+}
+
+.btn3d:active,
+.btn3d.active {
+    top: 2px;
+}
+
+.btn3d.btn-default {
+    color: #404040;
+    box-shadow: 0 0 0 1px #404040 inset, 0 0 0 2px #404040 inset, 0 8px 0 0 #404040, 0 8px 8px 1px #404040;
+    background-color: coral;
+}
+
+.btn3d.btn-default:active,
+.btn3d.btn-default.active {
+    color: #404040;
+    box-shadow: 0 0 0 1px #404040 inset, 0 0 0 1px #404040 inset, 0 1px 3px 1px #404040;
+    background-color: coral;
+}
