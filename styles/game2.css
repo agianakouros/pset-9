@@ -196,10 +196,6 @@ h1 {
     text-align: center;
 }
 
-div .btn3d {
-  align-self: center;
-}
-
 .btn3d:hover{
   cursor: pointer;
 }
@@ -227,4 +223,11 @@ div .btn3d {
     color: #404040;
     box-shadow: 0 0 0 1px #404040 inset, 0 0 0 1px #404040 inset, 0 1px 3px 1px #404040;
     background-color: coral;
+}
+
+.container {
+  display: flex;           /* set our display property to use flex-box */
+  justify-content: center; /* center container horizontally */
+  align-items: center;     /* center content vertically */
+  padding-top: 10px;
 }
