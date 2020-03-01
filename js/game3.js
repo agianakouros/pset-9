@@ -250,13 +250,3 @@ function yellowFirst(){
   first = "Yellow"
 
 }
-
-function resetScoreboard() {
-    redWins = 0;
-    yellowWins = 0;
-    ties = 0;
-
-    document.getElementById("redScore").innerHTML = redWins;
-    document.getElementById("tScore").innerHTML = ties;
-    document.getElementById("yellowScore").innerHTML = yellowWins;
-  }

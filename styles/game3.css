@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
+
 body {
   background-color: #212427;
-  color: rgba(255, 255, 255, 0.7);
+  color: white;
   font-family: 'Lato', sans-serif;
   margin: 20px;
 }
@@ -158,72 +158,8 @@ a:hover {
 
 
 body {
-
   background-size: cover;
   text-align: center;
-}
-
-h1 {
-  margin: 0 auto;
-  font-family: "Major Mono Display", monospace;
-  font-size: 48px;
-  margin: 2%;
-  color: white;
-}
-
-td {
-  border-color: white;
-}
-
-p {
-  background-color: black;
-}
-table, td, th {
-  border: 1px solid white;
-}
-
-div {
-  text margin: 0px;
-}
-
-td {
-  border-color: black;
-}
-
-p {
-  background-color: black;
-}
-table, td, th {
-  border: 1px solid white;
-  color: white;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  background-color: #111;
-}
-
-.active {
-  background-color: #4CAF50;
 }
 
 .dot {
@@ -278,7 +214,7 @@ align-items: center;
 }
 
 .first {
-  border: 1px solid;
+  border: 3px solid;
   font-size: 46px;
   height: 90px;
   line-height: 100px;
@@ -293,15 +229,6 @@ align-items: center;
     background-color: white;
     cursor: pointer;
     color: black;
-}
-
-.scoreboard {
-  border-collapse: collapse;
-  margin: 2%;
-  border-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #board {
@@ -323,7 +250,7 @@ align-items: center;
 
 
 #turn {
-  font-size: 70px;
+  font-size: 48px;
   margin: 5px;
 }
 
@@ -390,10 +317,18 @@ align-items: center;
     background-color: coral;
 }
 
-.container {
+.container1 {
   display: flex;           /* set our display property to use flex-box */
   justify-content: center; /* center container horizontally */
   align-items: center;     /* center content vertically */
   padding-top: 0px;
   flex-direction: column;
+}
+
+h1 {
+  margin: 0 auto;
+  font-family: "Major Mono Display", monospace;
+  font-size: 48px;
+  margin: 2%;
+  color: white;
 }
