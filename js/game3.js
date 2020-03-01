@@ -93,7 +93,6 @@ document.getElementById("board").onclick = takeTurn;
 document.getElementById("reset-button").onclick = playAgain;
 document.getElementById("redFirst").onclick = redFirst;
 document.getElementById("yellowFirst").onclick = yellowFirst;
-document.getElementById("reset-scoreboard").onclick = resetScoreboard;
 ///////////////////// FUNCTIONS /////////////////////////////////////
 
 function init() {
