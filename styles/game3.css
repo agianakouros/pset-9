@@ -301,7 +301,7 @@ align-items: center;
 }
 
 .container1 {
-  display: flex;           /* set our display property to use flex-box */
+  display: flex;        
   justify-content: center; /* center container horizontally */
   align-items: center;     /* center content vertically */
   padding-top: 0px;
