@@ -173,8 +173,8 @@ h2 {
 }
 
 .container {
-  display: flex;           /* set our display property to use flex-box */
-  justify-content: center; 
+  display: flex;       
+  justify-content: center;
   align-items: center;
 }
 
