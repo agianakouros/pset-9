@@ -173,7 +173,7 @@ h2 {
 }
 
 .container {
-  display: flex;       
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -181,7 +181,7 @@ h2 {
 .column {
   height: 100%;
   width: 100%;
-  flex-direction: column; /* align children in columns instead of rows */
+  flex-direction: column;
 }
 
 .wrap {
