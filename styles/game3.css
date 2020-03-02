@@ -240,6 +240,10 @@ align-items: center;
   border-radius: 25px;
 }
 
+#board:hover {
+  cursor: pointer;
+}
+
 #yellowFirst {
   background-color: #f5ef38;
 }
@@ -303,7 +307,7 @@ align-items: center;
 .container1 {
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
   padding-top: 0px;
   flex-direction: column;
 }
