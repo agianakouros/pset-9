@@ -226,8 +226,8 @@ h1 {
 }
 
 .container {
-  display: flex;         
-  justify-content: center; /* center container horizontally */
+  display: flex;
+  justify-content: center; 
   align-items: center;     /* center content vertically */
   padding-top: 10px;
 }
